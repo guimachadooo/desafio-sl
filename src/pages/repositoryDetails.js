@@ -43,7 +43,7 @@ export default function RepositoryDetails(props){
         <div className="repository-box"><br/>
 
           <p className="repo-title">{`Repositório ${data.name}`}</p>
-          <p>Descrição: {data.description}</p>
+          <p>{data.description ? `Descrição: ${data.description}` : "Sem descrição cadastrada"}</p>
 
           <div className="space" />
 
