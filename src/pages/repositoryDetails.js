@@ -44,20 +44,18 @@ export default function RepositoryDetails(props){
 
           <p className="repo-title">{`Repositório ${data.name}`}</p>
           <p>Descrição: {data.description}</p>
-          <p>
-            Estrelas: {data.stargazers_count}
-          </p>
 
           <div className="space" />
 
           <div className="repository-footer">
-            <div className="repository-links"><br/>
+            <div className="repository-links">              
+              <p>Estrelas: {data.stargazers_count}</p>
+              <p>Forks: {data.forks_count}</p>
+              <p>Linguagem: {data.language}</p>
               <p>Contribuidores: 
                 <a href={`https://github.com/${user}/${repo}/contributors`} 
                   target="_blank" rel="noreferrer"> Ver lista </a>
               </p>
-              <p>Forks: {data.forks_count}</p>
-              <p>Linguagem: {data.language}</p>
             </div>
           </div>
         </div>
