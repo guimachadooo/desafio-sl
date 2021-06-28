@@ -41,7 +41,7 @@ export default function RepositoryList(props){
     
     if(repos.length > 0){
       items = (
-        <div className="repository-box">
+        <div className="repository-box table-box">
           <table>
             <tr>
               <td className="td-table">Nome</td>
