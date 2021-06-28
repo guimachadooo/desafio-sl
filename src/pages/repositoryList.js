@@ -39,7 +39,7 @@ export default function RepositoryList(props){
     
     var items = "";
     
-    if(repos > 0){
+    if(repos.length > 0){
       items = (
         <div className="repository-box">
           <table>
