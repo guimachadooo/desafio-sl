@@ -36,10 +36,10 @@ export default function RepositoryList(props){
 
   const showRepositories = () => {
     var repos = data;
-    console.log(repos)
+    
     var items = "";
     
-    if(repos){
+    if(repos > 0){
       items = (
         <div className="repository-box">
           <table>
