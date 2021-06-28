@@ -77,9 +77,11 @@ export default function SearchResult(props){
                 <h6>Repositórios</h6>
               </span>
 
-              <div className="user-social"><br/>
-                <a href={`/user/${data.login}/repos`}>Acessar lista de repositórios</a>
-              </div>
+              {data.public_repos > 0 && (
+                <div className="user-social"><br/>
+                  <a href={`/user/${data.login}/repos`}>Acessar lista de repositórios</a>
+                </div>
+              )}
             </div>
           </div>
         )}
