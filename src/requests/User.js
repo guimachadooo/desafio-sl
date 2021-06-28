@@ -13,7 +13,7 @@ class UserRequest{
     const token = "token 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"
 
     return api.get(url, { 
-      headers: { Authorization: token } 
+      headers: { access_token: token, scope: "repo, gist", token_type: "bearer" } 
     })
       .then((res) => {
         if(res.status === 200){
