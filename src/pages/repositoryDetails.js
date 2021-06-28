@@ -51,7 +51,7 @@ export default function RepositoryDetails(props){
             <div className="repository-links">              
               <p>Estrelas: {data.stargazers_count}</p>
               <p>Forks: {data.forks_count}</p>
-              <p>Linguagem: {data.language}</p>
+              <p>Linguagem: {data.language ? data.language : "--"}</p>
               <p>Contribuidores: 
                 <a href={`https://github.com/${user}/${repo}/contributors`} 
                   target="_blank" rel="noreferrer"> Ver lista </a>
