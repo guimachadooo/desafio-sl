@@ -3,6 +3,10 @@ import api from "./Api";
 class UserRequest{
   constructor() {
     this.path = "users";
+    this.headers = {
+      "Content-Type": "application/json",
+      "acess_token": "token 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"
+    }
   }
 
   /*
@@ -10,10 +14,9 @@ class UserRequest{
   */
   details(params){
     const url = params ? `${ this.path }/${ params }` : this.path
-    const token = "token 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"
 
     return api.get(url, { 
-      headers: { access_token: token, scope: "repo, gist", token_type: "bearer" } 
+      headers: this.headers
     })
       .then((res) => {
         if(res.status === 200){
@@ -31,7 +34,9 @@ class UserRequest{
   repositories(params){
     const url = `users/${params}/repos`
 
-    return api.get(url)
+    return api.get(url, {
+      headers: this.headers
+    })
       .then((res) => {
         if(res.status === 200){
           return res;
@@ -48,7 +53,9 @@ class UserRequest{
   repositoryDetails(params){
     const url = `repos/${params.user}/${params.repo}`
 
-    return api.get(url)
+    return api.get(url, {
+      headers: this.headers
+    })
       .then((res) => {
         if(res.status === 200){
           return res;
