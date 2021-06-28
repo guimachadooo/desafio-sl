@@ -6,7 +6,6 @@ import Loader from "../components/Loader";
 
 import UserRequest from "../requests/User";
 
-import starIcon from "../assets/img/star.png"
 import "./style.css";
 
 export default function RepositoryDetails(props){
