@@ -1,0 +1,297 @@
+body{
+  margin: 0;
+  height: 100%;
+  font-family: "Lato", Arial;
+  background-color: rgb(224, 188, 235);
+}
+
+.space{
+  margin-top: 2em;
+}
+
+.avatar{
+  width: 100px;
+  border-radius: 100px;
+}
+
+.navbar{
+  width: 100%;
+  height: 50px;
+  background-color: rgb(157, 22, 211);
+}
+
+.navbar .navbar-items{
+  float: right;
+}
+
+.navbar .navbar-items ul li{
+  padding-right: 20px;
+  text-decoration: none;
+  list-style: none;
+  float: left;
+}
+
+.item{
+  font-family: "Lato", Arial;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  background-color: rgb(157, 22, 211);
+}
+
+.item:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.go-back{
+  margin: 15px 0 0 0;
+  padding: 0 0 0 15px;
+  float: left;
+  text-align: left !important;
+}
+
+.go-back a{
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.go-back a:hover{
+  color: rgb(157, 22, 211);
+  font-weight: 700;
+  background-color: #fff;
+  transition: .3s;
+}
+
+.container{
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.about{
+  border: 3px solid rgb(157, 22, 211);
+  background-color: #efefef;
+  border-radius: 20px;
+  padding: 10px;
+  transition: 'opacity 1s ease-in';
+}
+
+.about-info{
+  height: auto;
+}
+
+.about .img-about{
+  width: 120px;
+}
+
+.about img{
+  width: 100px; 
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.about span{
+  vertical-align: middle;
+  display: table-cell;
+  text-align: left !important;
+}
+
+.about  .packages{
+  text-align: left !important;
+}
+
+.about button{
+  border: 0;
+  color: rgb(157, 22, 211);
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.about button:hover{
+  color: #fff;
+  cursor: pointer;
+  background-color: rgb(157, 22, 211);
+  transition: .3s;
+}
+
+.search-box{
+  position: relative;
+  margin: 0;
+}
+
+.search-box .banner{
+  margin-bottom: 40px;
+}
+
+.search-box input{
+  width: 600px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  padding-left: 40px;
+  background-image: url("../assets/img/search.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.search-box button{
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: #333;
+  border: 2px solid rgb(157, 22, 211);
+}
+
+.search-box button:hover{
+  cursor: pointer;
+  border: 2px solid rgb(198, 55, 255);
+  color: rgb(77, 76, 76);
+  transition: .3s;
+}
+
+.btn-token{
+  margin-left: 30px;
+}
+
+.suggestions{
+  font-style: italic;
+  font-size: 14px;
+  font-family: Arial;
+  color: #1a1a1a;
+}
+
+.go-back{
+  margin-left: 10px;
+  float: left;
+}
+
+.user-box, .repository-box{
+  position: relative;
+  margin: 0 auto;
+  width: 40%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  bottom:20px;
+}
+
+.repository-box{
+  width: 80% !important;
+  height: auto;
+}
+
+.repository-box table{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 20px;
+}
+
+.repository-box table tr:first-child{
+  background-color: slateblue;
+  color: #fff;
+  font-weight: 700;
+}
+
+.td-table{
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.more{
+  text-decoration: none;
+  color: slateblue;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.more:hover{
+  background-color: slateblue;
+  color: #fff;
+  transition: .3s;
+}
+
+.user-box .avatar{
+  margin: 10px 0 0 0;
+}
+
+.user-box h1, h6{
+  font-weight: 900;
+  color:#fff;
+  text-align: center;
+}
+
+.username, .repo-title{
+  color: rgb(43, 54, 155);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.user-numbers, .repository-footer{
+  position: relative;
+  bottom: 0;
+  margin: auto;
+  background-color: rgb(43, 54, 155);
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.user-social, .repository-links{
+  width: 100%;
+  padding: 15px;
+  text-decoration: none;
+  border-top: 1px solid #ccc;
+  border-radius: 0 0 10px 10px;
+  color: #fff;
+}
+
+.user-social a, .repository-links a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.user-social a:hover, .repository-links a:hover{
+  background-color: #fff;
+  color: rgb(74, 81, 143);
+  transition: .3s;
+}
+
+.user-box span{
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  flex: 1 1 0;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgb(157, 22, 211);;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: slateblue;
+}
+
+.footer {
+  background-color: rgb(157, 22, 211);
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+}
