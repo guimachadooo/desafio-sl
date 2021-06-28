@@ -2,7 +2,6 @@ import React from "react";
 import gif from "../assets/img/loading.gif";
 
 import Navbar from "./Navbar";
-import Footer from "./Footer";
 
 import "../pages/style.css";
 
@@ -18,10 +17,6 @@ export default function Loader(){
           <img src={gif} alt="loading" style={{width: "50px"}} />
         </span>
       </div>
-
-      <div className="space" />
-
-      <Footer />
     </div>
   )
 }

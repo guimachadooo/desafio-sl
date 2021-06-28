@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import Loader from "../components/Loader";
 import UserRequest from "../requests/User";
 
@@ -89,11 +88,6 @@ export default function SearchResult(props){
           <p>{error}</p>
         )}
       </div>      
-      
-      <div className="space" />
-
-      <Footer />
-
     </div>
   )
 }

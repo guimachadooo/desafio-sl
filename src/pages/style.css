@@ -121,7 +121,8 @@ body{
 
 .search-box{
   position: relative;
-  margin: 0;
+  margin: 0 auto;
+  width: 600px;
 }
 
 .search-box .banner{
@@ -129,7 +130,7 @@ body{
 }
 
 .search-box input{
-  width: 600px;
+  width: 100%;
   height: 50px;
   border-radius: 50px;
   border: 1px solid #ccc;
@@ -284,14 +285,4 @@ body::-webkit-scrollbar-track {
  
 body::-webkit-scrollbar-thumb {
   background-color: slateblue;
-}
-
-.footer {
-  background-color: rgb(157, 22, 211);
-  color: #fff;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: auto;
-  padding-top: 10px;
 }

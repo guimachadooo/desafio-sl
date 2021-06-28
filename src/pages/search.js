@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
-import banner from "../assets/img/sl.png";
+import banner from "../assets/img/git-banner.png";
 import "./style.css";
 
 export default function Search(props){
@@ -37,33 +36,24 @@ export default function Search(props){
         <img src={banner} className="banner" alt="SearchLog" />
 
         <form onSubmit={doSearch}>
-          <input 
-            type="text" 
-            placeholder="Procurar um usuário..."
-            minLength="3" 
-            maxLength="30"
-            required
-            onChange={(e) => handleFilter(e)}
-          /><br/>
+          <div className="input-box">
+            <input 
+              type="text" 
+              placeholder="Procurar um usuário..."
+              minLength="3" 
+              maxLength="30"
+              required
+              onChange={(e) => handleFilter(e)}
+            /><br/>
+          </div>
+          
           <span className="suggestions">Sugestões: guimachadooo, rstacruz, leeopaleari</span>
 
           <div className="space" />
 
-          <button className="btn-search" type="submit">Pesquisa SL</button>
-
-          <button 
-              className="btn-token" 
-              type="button" 
-              onClick={() => window.location.href = "https://sexlog.com"}>
-              Ganhar Tokens
-          </button>
+          <button className="btn-search" type="submit">Pesquisar</button>
         </form>
       </div>
-
-      <div className="space" />
-
-      <Footer />
-
     </div>
   )
 }
