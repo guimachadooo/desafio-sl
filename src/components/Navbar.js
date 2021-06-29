@@ -51,7 +51,7 @@ export default function Navbar(props){
           </span>
 
           <span>
-            <p>Feito por Gui Machado &copy;</p>
+            <p>Feito por Gui Machado &copy; 100% React</p>
             <p>Contato: fb.com/guimachadooo</p>
           </span>
         </div>
